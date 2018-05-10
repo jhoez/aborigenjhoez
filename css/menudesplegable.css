@@ -1,0 +1,83 @@
+/* FUENTES DEFINAS */
+@font-face {
+    font-family:'graffititreat';
+    src: url(../css/graffititreat.ttf);
+    font-weight:bold;
+}
+
+@font-face {
+    font-family:'graffititreatfront';
+    src: url(../css/graffititreatfront.ttf);
+    font-weight:bold;
+}
+
+@font-face {
+    font-family:'graffonti.3d.drop.[fontvir.us]';
+    src: url(../css/graffonti.3d.drop.[fontvir.us].ttf);
+    font-weight:bold;
+}
+
+@font-face {
+    font-family:'Scrawl_3rd';
+    src: url(../css/Scrawl_3rd.otf);
+    font-weight:bold;
+}
+
+/**********************************/
+.nav {
+    width:900px;
+    margin:0px auto;
+}
+
+.nav > li {
+    list-style:none;
+    float:left;
+    margin:5px;
+    font-family:Scrawl_3rd;
+    font-size:18px;
+    letter-spacing:2px;
+}
+ 
+.nav li a {
+    background:#0c9ba0;
+    text-decoration:none;
+    color:#FFF;
+    display:block;
+    border:1px solid;
+    padding:10px 22px;
+    border-radius:10px;
+}
+ 
+.nav li a:hover {
+background:#0fbfc6;
+}
+
+.nav li ul {
+display:none;
+position:absolute;
+min-width:140px;
+}
+
+.nav li:hover > ul {
+display:block;
+list-style:none;
+}
+
+.nav li ul li {
+position:relative;
+}
+ 
+.nav li ul li ul {
+right:-140px;
+top:0px;
+}
+
+/*flecha del menu*/
+.nav li .flecha{
+font-size: 9px;
+padding-left: 6px;
+display:none;
+}
+.nav li a:not(:last-child) .flecha {
+display:inline;
+}

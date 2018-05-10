@@ -1,0 +1,469 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+    /*background:-webkit-linear-gradient(left,#99ccff,#0b9d8d,#99ccff);
+    background:-moz-linear-gradient(left,#99ccff,#0b9d8d,#99ccff);*/
+    background:url(../img/fondo2.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+}
+/* FONDO DE HISTORIA GRAFFITI Y BREAKING */
+
+
+@font-face {
+    font-family:'graffititreat';
+    src: url(../css/graffititreat.ttf);
+    font-weight:bold;
+}
+
+@font-face {
+    font-family:'graffititreatfront';
+    src: url(../css/graffititreatfront.ttf);
+    font-weight:bold;
+}
+
+@font-face {
+    font-family:'graffonti.3d.drop.[fontvir.us]';
+    src: url(../css/graffonti.3d.drop.[fontvir.us].ttf);
+    font-weight:bold;
+}
+
+@font-face {
+    font-family:'Scrawl_3rd';
+    src: url(../css/Scrawl_3rd.otf);
+    font-weight:bold;
+}
+
+/*********************************
+              BANNER
+**********************************/
+.head {
+    height:200px;
+    margin:0px auto;
+    color:#fff;
+}
+
+.head h1 {
+    padding-top:30px;
+    font-family:graffititreatfront;
+    font-size:152px;
+    font-weight:bold;
+    text-align:center;
+    text-shadow: 0 1px 0 #ccc,
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb, 
+                0 4px 0 #b9b9b9, 
+                0 5px 0 #aaa, 
+                0 6px 1px rgba(0, 0, 0, .1), 
+                0 0 5px rgba(0, 0, 0, .1), 
+                0 1px 3px rgba(0, 0, 0, .3), 
+                0 3px 5px rgba(0, 0, 0, .2), 
+                0 5px 10px rgba(0, 0, 0, .25), 
+                0 10px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15)
+    ;
+}
+/*************************************
+              index
+**************************************/
+.cajaadmin {
+    width:900px;
+    margin:0px auto;
+    padding:10px;
+    clear:both;
+    font-size:20px;
+}
+#tad {
+    font-family:Scrawl_3rd;
+}
+#admp1{
+    width:900px;
+    maring:0px auto;
+    clear:both;
+    color:#000;
+    text-align:justify;
+}
+
+#admp2 {
+    width:900px;
+    maring:0px auto;
+    color:#000;
+    text-align:justify;
+}
+
+#admti1, #admti2, #admti3 {
+    color:#000;
+    font-family:Scrawl_3rd;
+    padding:30px;
+    text-align:center;
+}
+
+.admimgindex {
+    float:left;
+    height:220px;
+    width:250px;
+    padding-right:10px;
+    padding-bottom:10px;
+    border-radius:30px;
+}
+
+/*************************************
+              PAGINA 1
+**************************************/
+.cajapagina1 {
+    font-family:graffititreatfront;
+    margin:0px auto;
+    padding:10px;
+    color:#000;
+    clear:both;
+}
+.pagt1 {
+    font-family:graffititreatfront;
+    text-align:center;
+}
+#aka {
+    font-family:Scrawl_3rd;
+    font-size:20px;
+    font-weight:bold;
+    padding:20px;
+    text-align:center;
+    clear:both;
+}
+#UNI,#UEN {
+    font-family:Scrawl_3rd;
+    font-size:20px;
+    font-weight:bold;
+    padding:20px;
+    text-align:center;
+    clear:both;
+}
+#textgal1,#textgal2,#textgal3,#textgal4 {
+    font-family:Scrawl_3rd;
+    font-size:20px;
+    font-weight:bold;
+    width:950px;
+    margin:0px auto;
+}
+#galpag1,#galpag2,#galpag3,#galpag4 {
+    padding:2px;
+    height:250px;
+    width:300px;
+    border-radius:30px;
+}
+
+/*************************************
+              PAGINA 3
+**************************************/
+
+.cajapagina3 {
+    height:391px;
+    width:900px;
+    margin:0px auto;
+    color:#000;
+    clear:both;
+}
+
+.descargadmin {
+    font-family:Scrawl_3rd;
+    width:450px;
+    margin:0px auto;
+}
+
+#tides {
+    padding:30px;
+    font-family:Scrawl_3rd;
+    text-align:center;
+}
+
+#tdes {
+    padding:10px;
+}
+
+#tdes h2 a {
+    text-decoration:none;
+    lista-style:none;
+}
+
+#des {
+    color:#1af499;
+}
+
+/*************************************
+              PAGINA 4
+**************************************/
+
+.cajapagina4 {
+    width:900px;
+    margin:0px auto;
+}
+#admtpag {
+    width:300px;
+    margin:0px auto;
+    padding:30px;
+    font-family:Scrawl_3rd;
+    text-align:center;
+}
+#admdescripmusica {
+    width:600px;
+    margin:0px auto;
+    font-size:20px;
+    font-family:Scrawl_3rd;
+    font-weight:bold;
+    padding:25px;
+    text-align:justify;
+}
+
+/*************************************
+              PAGINA 6
+**************************************/
+.cajapagina61, .cajapagina62 {
+    width:900px;
+    height:450px;
+    margin:0px auto;
+    padding-bottom:95px;
+    clear:both;
+}
+#ticont1, #ticont2 {
+    font-family:Scrawl_3rd;
+    width:800px;
+    margin:0px auto;
+    padding:30px;
+}
+#ticontac1, #ticontac2 {
+    font-family:Scrawl_3rd;
+    font-size:20px;
+    width:520px;
+    margin:0px auto;
+}
+
+/*************************************
+              PAGINA 7
+**************************************/
+#cajapag7 {
+    width:600px;
+    margin:0px auto;
+}
+
+.tfpag7 {
+    background:-webkit-linear-gradient(#1a75ff,white);
+    background:-moz-linear-gradient(#1a75ff,white);
+    color:#000;
+    width:340px;
+    margin:50px auto;
+    border-radius:5px;
+    color:#000;
+    text-align:center;
+}
+
+.formulario {
+    width:310px;
+    margin:0px auto;
+    color:#fff;
+}
+
+label {
+    display:block;
+}
+
+.rad {
+    display: block;
+    margin: 10px 0;
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+}
+
+#selector {
+    display: block;
+    margin: 10px 0;
+    height: 30px;
+    width: 120px;
+    font-size: 20px;
+}
+
+#caja {
+    display:block;
+    width:455px;
+    height:200px;
+}
+
+#enviarp {
+    width:80px;
+    height:40px;
+    margin-bottom:5px;
+}
+
+#enviarp a{
+    text-decoration:none;
+    color:black;
+}
+
+#enviarp:hover {
+    background-color:#123;
+    border-color:#123;
+    border-radius:15px;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+
+/*****************************
+      historia breaking
+******************************/
+.cajapag2 {
+    width:900px;
+    margin:0px auto;
+    clear:both;
+    padding:20px;
+}
+
+#tigraf {
+    color:#000;
+    font-family:Scrawl_3rd;
+    padding:15px;
+    text-align:center;
+}
+
+.imghistoria {
+    padding-left:10px;
+    padding-bottom:10px;
+    float:right;
+    height:250px;
+    width:600px;
+}
+
+#pgraffiti {
+    color:#000;
+    font-size:20px;
+    text-align:justify;
+}
+
+#tibreak {
+    color:#000;
+    font-family:Scrawl_3rd;
+    padding:20px;
+    text-align:center;
+}
+
+.imgbreak {
+    padding-left:10px;
+    padding-bottom:10px;
+    float:right;
+    height:250px;
+    width:600px;
+}
+
+#pbreakdance {
+    color:#000;
+    font-size:20px;
+    text-align:justify;
+}
+/*****************************
+             login
+******************************/
+
+#iniciar {
+    margin:0px auto;
+    padding-top:50px;
+    height:342px;
+    width:250px;
+    color:#fff;
+    clear:both;
+}
+
+.loginusuario {
+    font-family:Scrawl_3rd;
+    color:#000;
+    width:210px;
+    margin:0px auto;
+    padding:20px;
+}
+
+#cajaboton{
+    display:block;
+    margin:10px 0px;
+    height:30px;
+    width:200px;
+    font-size:18px;
+}
+
+.botonI {
+    font-family:Scrawl_3rd;
+    margin:0px auto;
+    float:left;
+    width:70px;
+    height:30px;
+    margin:2px;
+    margin-bottom:5px;
+    border-radius:10px;
+}
+
+.botonI a{
+    text-decoration:none;
+    color:black;
+}
+
+.botonI:hover {
+    background-color:#123;
+    border-color:#123;
+    border-radius:15px;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+
+.botonII {
+    font-family:Scrawl_3rd;
+    margin:0px auto;
+    float:left;
+    widows:89px;
+    height:30px;
+    margin-left:25px;
+    margin-bottom:5px;
+    border-radius:10px;
+    clear:both;
+}
+
+.botonII a{
+    text-decoration:none;
+    color:black;
+}
+
+.botonII:hover {
+    background-color:#123;
+    border-color:#123;
+    border-radius:15px;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+
+/*****************************
+           piepaginas
+******************************/
+
+.piepagina {
+    font-family:Scrawl_3rd;
+    height:40px;
+    margin:0px auto;
+    background:-webkit-linear-gradient(bottom,#1a75ff,white);
+    background:-moz-linear-gradient(bottom,#1a75ff,white);
+    color:#000;
+    clear:both;
+}
+
+.piepagina p {
+    padding:10px;
+    text-align:center;
+}

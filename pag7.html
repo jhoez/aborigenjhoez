@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script language="javascript">
+    function validardatosPOST() {
+        var verificar=true;
+        var expRegEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+        var pass1 = document.getElementById('pass1').value;
+        var pass2 = document.getElementById('pass2').value;
+
+        if (!document.formulario.usuario.value) {
+            alert("el campo usuario es requerido");
+            document.formulario.usuario.focus();
+            verificar=false;
+        }else if (!document.formulario.nombre.value) {
+            alert("el campo nombre es requerido");
+            document.formulario.nombre.focus();
+            verificar=false;
+        }else if (!document.formulario.apellido.value) {
+            alert("el campo apellido es requerido");
+            document.formulario.apellido.focus();
+            verificar=false;
+        }else if(!document.formulario.cedula.value) {
+            alert("el campo cedula es requerido");
+            document.formulario.cedula.focus();
+            verificar=false;
+        }else if (!document.formulario.pass.value){
+            alert("el campo contraseña es requerido");
+            document.formulario.pass.focus();
+            verificar=false;
+        }else if (!document.formulario.npass.value) {
+            alert("el campo confirmar contraseña es requerido");
+            document.formulario.npass.focus();
+            verificar=false;
+        }else if (!document.formulario.nacionalidad[0].checked && !document.formulario.nacionalidad[1].checked){
+            alert("Necesita seleccionar una opcion de nacionalidad");
+            document.formulario.nacionalidad[0].focus();
+            verificar=false;
+        }else if (!document.formulario.sexo[0].checked && !document.formulario.sexo[1].checked){
+            alert("Seleccione su genero");
+            document.formulario.sexo[0].focus();
+            verificar=false;
+        }else if (!document.formulario.profesion[0].checked && !document.formulario.profesion[1].checked){
+            alert("Seleccione su profesion");
+            document.formulario.profesion[0].focus();
+            verificar=false;
+        }else if (pass1 == ""){
+            alert("Ingrese la contraseña");
+            document.getElementById("pass1").focus();
+            return false;
+        }else if (pass1.length < 6 || pass1.length > 8){  
+            alert("La contraseña debe tener entre 6 y 8 caracteres");
+            document.getElementById("pass1").focus();
+            return false;
+        }else if (pass2 == ""){//validando la otra contraseña
+            alert("Por favor, Ingrese nuevamente su contraseña");
+            document.getElementById("pass2").focus();
+            return false;
+        }else if (pass2 != pass1){
+            alert("Las contraseñas no coinciden, Vuelva a ingresar su contraseña");
+            document.getElementById("pass1").focus();
+            return false;
+        }else if(!document.formulario.correo.value){//EMAIL
+            alert('el campo email es necesario');
+            document.formulario.correo.focus();
+            verificar = false;
+        }else if(!expRegEmail.exec(document.formulario.correo.value)){//VERIFICA SI EL EMAIL CONTIENE @ Y .
+            alert('el email no tiene al menos un @ o .');
+            document.formulario.correo.focus();
+            verificar = false;
+        } 
+            
+        if (verificar){
+            document.formulario.submit();
+        }         
+}
+    window.onload = function(){
+        document.getElementById("enviarp").onclick = validardatosPOST;
+    }
+</script>
+<script language="javascript">
+    function validarnumeros(e){
+        key=e.keycode || e.which;
+        teclado=String.fromCharCode(key);
+        numero="0123456789";
+        especiales="8-37-38-46";
+        teclado_especial=false;
+
+        for(var i in especiales){
+            if(key==especiales[i]){
+                teclado_especial=true;
+            }
+        }
+        if(numero.indexOf(teclado)==-1 && !teclado_especial){
+            return false;
+        }
+         
+    }
+</script>
+<script language="javascript">
+    function soloLetras(e) {
+        key = e.keyCode || e.which;
+        tecla = String.fromCharCode(key).toString();
+        letras = " áéíóúabcdefghijklmnñopqrstuvwxyzÁÉÍÓÚABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+        especiales = [8, 37, 39, 46, 6];
+        tecla_especial = false;
+
+        for(var i in especiales){
+            if(key == especiales[i]){
+                tecla_especial = true;
+                break;
+            }
+        }
+        if(letras.indexOf(tecla) == -1 && !tecla_especial){
+            return false;
+        }
+    }
+</script>
+<script type="text/javascript">
+    function mayusculainicial(mayus){
+        var txt = mayus.value;
+        mayus.value = txt.substring(0,1).toUpperCase() + txt.substring(1,txt.length);
+    }
+</script>
+
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/menudesplegable.css">    
+</head>
+<body>
+<div class="head"><h1>AbORiGeNjHoEz</h1></div>
+    <ul class="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pag1.html">Galeria</a></li>
+        <li><a>Historia<span class="flecha">&#9660;</span></a>
+            <ul> 
+                <li><a href="historiagraffiti.html">Historia del Break Dance Venezolano</a></li>
+                <li><a href="historiabreaking.html">Historia del Graffiti Venezolano</a></li>
+            </ul>
+        </li>
+        <li><a href="pag4.html">Musica</a></li>
+        <li><a href="login.html">login</a></li>
+        <li><a href="pag6.html">Contacto</a></li>
+    </ul>
+    <div id="cajapag7">
+    <h1 class="tfpag7">Registro de Usuario</h1>
+    <form name="formulario" onSubmit="return validarPasswd()" class="formulario" action="insertar.php" method="post">
+        <label>Usuario</label>
+        <input class="rad" id="usuario" type="text" name="usuario" onClick="primeraletra();" value="">
+        <label>Nombre</label>
+        <input class="rad" id="nombre" type="text" name="nombre" onClick="primeraletra();" onkeypress="return soloLetras(event)" value="" onkeyup="mayusculainicial(this)">
+        <label>Apallido</label>
+        <input class="rad" id="apellido" type="text" name="apellido" onClick="primeraletra();" onkeypress="return soloLetras(event)" value="" onkeyup="mayusculainicial(this)">
+        <label>Cedula</label>
+        <input class="rad" id="cedula" type="text" name="cedula" onkeypress="return validarnumeros(event)" value="">
+        <label>Contrase&ntilde;a</label>
+        <input class="rad" id="pass1" type="password" name="pass" value="">
+        <label>Confirmar contrase&ntilde;a</label>
+        <input class="rad" id="pass2" type="password" name="npass" value="">
+        <br><br>
+        <label>Nacionalidad</label>
+        <br>
+        <input id="V" type="radio" name="nacionalidad" value="V"/>Venezolana&nbsp;
+        <input id="E" type="radio" name="nacionalidad" value="E"/>Extranjera&nbsp;
+        <br><br>
+        <label>Sexo</label>
+        <br>
+        <input id="M" type="radio" name="sexo" value="M"/>Maculino&nbsp;
+        <input id="F" type="radio" name="sexo" value="F"/>Femenino&nbsp;
+        <br><br>
+        <label>Profesion</label>
+        <br>
+        <input id="P" type="radio" name="profesion" value="P"/>Profesor&nbsp;
+        <input id="A" type="radio" name="profesion" value="A"/>Alumno&nbsp;
+        <br><br>
+        <label>Correo electronico</label>
+        <br>
+        <input id="correo" class="rad" type="text" name="correo" value="">
+        <br>
+        <input type="button" id="enviarp" name="enviar" value="enviar">
+    </form>
+    </div>
+    <div class="piepagina">
+        <p>Contacto: informaticos</p>
+    </div>
+</body>
+</html>
